@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django_constraint_triggers',
+    'django_queryset_constraint',
     'pizzastore',
     'django.contrib.admin',
     'django.contrib.auth',

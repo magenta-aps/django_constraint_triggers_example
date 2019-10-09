@@ -1,0 +1,23 @@
+language: python
+# List the versions of Python you'd like to test against
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+# List the versions of Django you'd like to test against
+env:
+  matrix:
+   - DJANGO_VERSION=2.2
+
+services:
+  - postgresql
+
+install:
+  - pip install -r requirements.txt
+   # Install whatever version of Django that's listed above
+  - pip install -q Django==$DJANGO_VERSION
+
+script:
+  - python manage.py makemigrations
+  - python manage.py migrate
+  - python manage.py test

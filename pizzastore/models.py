@@ -3,7 +3,7 @@ from django.db.models import (
     Q,
     Count,
 )
-from django_constraint_triggers import M, QuerysetConstraint
+from django_queryset_constraint import M, QuerysetConstraint
 
 
 class Topping(models.Model):
