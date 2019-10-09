@@ -1,0 +1,5 @@
+django>=2.2.4
+parameterized==0.7.0
+psycopg2-binary==2.8.3
+--index-url https://test.pypi.org/simple/
+django_constraint_triggers==0.1.19
